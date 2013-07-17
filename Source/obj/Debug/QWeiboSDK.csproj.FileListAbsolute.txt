@@ -1,0 +1,13 @@
+E:\workspace\C#-SDK\Source\bin\Debug\QWeiboSDK.dll
+E:\workspace\C#-SDK\Source\bin\Debug\QWeiboSDK.pdb
+E:\workspace\C#-SDK\Source\obj\Debug\ResolveAssemblyReference.cache
+E:\workspace\C#-SDK\Source\obj\Debug\QWeiboSDK.dll
+E:\workspace\C#-SDK\Source\obj\Debug\QWeiboSDK.pdb
+E:\workspace\C#SDK2\Source\bin\Debug\QWeiboSDK.XML
+E:\workspace\C#SDK2\Source\bin\Debug\QWeiboSDK.dll
+E:\workspace\C#SDK2\Source\bin\Debug\QWeiboSDK.pdb
+E:\workspace\C#SDK2\Source\obj\Debug\ResolveAssemblyReference.cache
+E:\workspace\C#SDK2\Source\obj\Debug\QWeiboSDK.dll
+E:\workspace\C#SDK2\Source\obj\Debug\QWeiboSDK.pdb
+E:\workspace\C#SDK\Source\bin\Debug\QWeiboSDK.dll
+E:\workspace\C#SDK\Source\bin\Debug\QWeiboSDK.pdb
