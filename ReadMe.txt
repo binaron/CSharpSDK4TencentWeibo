@@ -1,47 +1,42 @@
-腾讯微博开放平台C# SDK
-支持环境 windows xp， windows 7  (VS2010, .NET 4.0,  低版本的.Net需要自己手动配置)
+锟斤拷讯微锟斤拷锟斤拷锟斤拷平台C# SDK
+支锟街伙拷锟斤拷 windows xp锟斤拷 windows 7  (VS2010, .NET 4.0,  锟酵版本锟斤拷.Net锟斤拷要锟皆硷拷锟街讹拷锟斤拷锟斤拷)
 
 
-作者： heloyue
-日期： 2011-06-20
+锟斤拷锟竭ｏ拷 heloyue
+锟斤拷锟节ｏ拷 2011-06-20
 
 
 
-工程配置：分成两个工程QWeiboSDK 和 QAPITool
+锟斤拷锟斤拷锟斤拷锟矫ｏ拷锟街筹拷锟斤拷锟斤拷锟斤拷锟斤拷QWeiboSDK 锟斤拷 QAPITool
 
 QWeiboSDK 
 
-SDK 分为两个层级
-	第一级： QWeiboRequest.cs 提供了同步异步两种访问网络的基本接口（SyncRequest，AsyncRequest），这两个接口可配置性比较强一些，同时需要配置的参数也比较多。
-	第二级：在第一级接口上分别实现了各类api， 下面是对应关系
-		 QauthKey.cs  	OAuth 授权
-		 statuses.cs  	时间线
-		 t.cs		微博相关
-		 user.cs, 	帐户相关	
-		 friends.cs	关系链相关
-		 private.cs	私信相关
-		 search.cs	搜索相关
-		 trends.cs	热度，趋势
-		 info.cs	数据更新相关
-		 fav.cs		数据收藏
-		 ht.cs		话题相关
-		 tag.cs		标签相关
-		 other.cs 	其他
+SDK 锟斤拷为锟斤拷锟斤拷锟姐级
+	锟斤拷一锟斤拷锟斤拷 QWeiboRequest.cs 锟结供锟斤拷同锟斤拷锟届步锟斤拷锟街凤拷锟斤拷锟斤拷锟斤拷锟侥伙拷锟斤拷锟接口ｏ拷SyncRequest锟斤拷AsyncRequest锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟接口匡拷锟斤拷锟斤拷锟皆比斤拷强一些锟斤拷同时锟斤拷要锟斤拷锟矫的诧拷锟斤拷也锟饺较多。
+	锟节讹拷锟斤拷锟斤拷锟节碉拷一锟斤拷锟接匡拷锟较分憋拷实锟斤拷锟剿革拷锟斤拷api锟斤拷 锟斤拷锟斤拷锟角讹拷应锟斤拷系
+		 QauthKey.cs  	OAuth 锟斤拷权
+		 statuses.cs  	时锟斤拷锟斤拷
+		 t.cs		微锟斤拷锟斤拷锟斤拷
+		 user.cs, 	锟绞伙拷锟斤拷锟斤拷	
+		 friends.cs	锟斤拷系锟斤拷锟斤拷锟斤拷
+		 private.cs	私锟斤拷锟斤拷锟斤拷
+		 search.cs	锟斤拷锟斤拷锟斤拷锟斤拷
+		 trends.cs	锟饺度ｏ拷锟斤拷锟斤拷
+		 info.cs	锟斤拷锟捷革拷锟斤拷锟斤拷锟斤拷
+		 fav.cs		锟斤拷锟斤拷锟秸诧拷
+		 ht.cs		锟斤拷锟斤拷锟斤拷锟斤拷
+		 tag.cs		锟斤拷签锟斤拷锟斤拷
+		 other.cs 	锟斤拷锟斤拷
 
-         上面的api 与 该api对应的uri有对应关系，比如，时间线的uri为 statuses/xxxx（statuses/home_timeline），  那么它对应的接口类为statuses, 而对应的接口为xxxx() 
-	  如home_timeline().
+         锟斤拷锟斤拷锟斤拷api 锟斤拷 锟斤拷api锟斤拷应锟斤拷uri锟叫讹拷应锟斤拷系锟斤拷锟斤拷锟界，时锟斤拷锟竭碉拷uri为 statuses/xxxx锟斤拷statuses/home_timeline锟斤拷锟斤拷  锟斤拷么锟斤拷锟斤拷应锟侥接匡拷锟斤拷为statuses, 锟斤拷锟斤拷应锟侥接匡拷为xxxx() 
+	  锟斤拷home_timeline().
 
 QAPITool
-	是测试例程，选择了两个比较有代表性的接口做了应用演示，其一为主页时间线statuses/home_timeline（GET）, 其二是t/add_pic发表一条带图片的微博（POST, 有图片）。 其他接口使用与这两个类似。ps 一下，例程中verifier要到浏览器中地址栏中去取。
+	锟角诧拷锟斤拷锟斤拷锟教ｏ拷选锟斤拷锟斤拷锟斤拷锟斤拷锟饺斤拷锟叫达拷锟斤拷锟皆的接匡拷锟斤拷锟斤拷应锟斤拷锟斤拷示锟斤拷锟斤拷一为锟斤拷页时锟斤拷锟斤拷statuses/home_timeline锟斤拷GET锟斤拷, 锟斤拷锟斤拷锟斤拷t/add_pic锟斤拷锟斤拷一锟斤拷锟斤拷图片锟斤拷微锟斤拷锟斤拷POST, 锟斤拷图片锟斤拷锟斤拷 锟斤拷锟斤拷锟接匡拷使锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟狡★拷ps 一锟铰ｏ拷锟斤拷锟斤拷锟斤拷verifier要锟斤拷锟斤拷锟斤拷锟斤拷锟叫碉拷址锟斤拷锟斤拷去取锟斤拷
 
 
 
-编译选项：
+锟斤拷锟斤拷选锟筋：
 
-目前提供两个编译选项 Debug 和 Release
+目前锟结供锟斤拷锟斤拷锟斤拷锟斤拷选锟斤拷 Debug 锟斤拷 Release
 
-
-有问题请联系作者！
-联系方式：
-QQ：40258602
-mail: 40258602@qq.com
