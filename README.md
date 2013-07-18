@@ -32,7 +32,7 @@ SDK 分为两个层级
 		 tag.cs		标签相关
 		 other.cs 	其他
 
-         上面的api 与 该api对应的uri有对应关系，比如，时间线的uri为 statuses/xxxx（statuses/home_timeline），  那么它对应的接口类
+上面的api 与 该api对应的uri有对应关系，比如，时间线的uri为 statuses/xxxx（statuses/home_timeline），  那么它对应的接口类
 
 为statuses, 而对应的接口为xxxx() 
 	  如home_timeline().
